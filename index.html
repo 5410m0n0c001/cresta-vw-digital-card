@@ -7,6 +7,14 @@
     <meta name="description" content="Tarjeta digital profesional de Erick Salgado Castrejon, Gerente de Cresta Volkswagen Cuernavaca. Contacto, ubicación y servicios automotrices.">
     <meta name="keywords" content="Volkswagen, Cresta, Cuernavaca, Erick Salgado, Gerente, Autos, Vehículos">
     <link rel="icon" href="assets/logo.png" type="image/png">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Erick Salgado Castrejón | Gerente Volkswagen Cresta Cuernavaca">
+    <meta property="og:description" content="Cotiza, agenda tu servicio o solicita una prueba de manejo con atención personalizada de Volkswagen Cresta Cuernavaca.">
+    <meta property="og:image" content="assets/logo.png">
+    <meta property="og:url" content="https://5410m0n0c001.github.io/Erick-Salgado-Castrejon-cresta-volks-wagen-cuernavaca/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Erick Salgado Castrejón - Volkswagen Cresta Cuernavaca">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -226,6 +234,16 @@
         .contact-item i {
             font-size: 2rem;
             margin-bottom: 1rem;
+            color: var(--vw-light-blue);
+        }
+
+        .btn i {
+            color: var(--vw-light-blue);
+            font-size: 1.2em;
+        }
+
+        .social-link i,
+        .social-link svg {
             color: var(--vw-light-blue);
         }
 
@@ -541,6 +559,27 @@
                 height: 26px;
             }
 
+            /* Mobile button glow effect */
+            .btn {
+                box-shadow: 0 0 20px rgba(0, 176, 240, 0.8), 0 0 40px rgba(0, 176, 240, 0.4);
+                border: 2px solid rgba(0, 176, 240, 0.6);
+            }
+
+            .contact-item {
+                box-shadow: 0 0 20px rgba(0, 176, 240, 0.8), 0 0 40px rgba(0, 176, 240, 0.4);
+                border: 2px solid rgba(0, 176, 240, 0.6);
+            }
+
+            .social-link {
+                box-shadow: 0 0 20px rgba(0, 176, 240, 0.8), 0 0 40px rgba(0, 176, 240, 0.4);
+                border: 2px solid rgba(0, 176, 240, 0.6);
+            }
+
+            .social-toggle {
+                box-shadow: 0 0 20px rgba(0, 176, 240, 0.8), 0 0 40px rgba(0, 176, 240, 0.4);
+                border: 3px solid rgba(255, 255, 255, 0.4);
+            }
+
             /* Mobile video optimization */
             .poster-section .video-bg,
             .footer .video-bg {
@@ -739,19 +778,19 @@
             </div>
 
             <div class="cta-buttons">
-                <a href="tel:+527773676346" class="btn" data-aos="zoom-in" data-aos-delay="100">
-                    <i class="fas fa-mobile-alt"></i>
-                    Llamar Móvil
+                <a href="https://wa.me/527773676346?text=Quisiera%20cotizar" class="btn" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-calculator"></i>
+                    Cotizar
                 </a>
-                <a href="tel:+527771010530" class="btn" data-aos="zoom-in" data-aos-delay="200">
-                    <i class="fas fa-phone"></i>
-                    Llamar Oficina
+                <a href="https://wa.me/527773676346?text=Quisiera%20hacer%20una%20cita%20para%20servicio" class="btn" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-calendar-alt"></i>
+                    Hacer una cita para servicio
                 </a>
-                <a href="mailto:erick.crestavw@gmail.com" class="btn" data-aos="zoom-in" data-aos-delay="300">
-                    <i class="fas fa-envelope"></i>
-                    Enviar Email
+                <a href="https://wa.me/527773676346?text=Quiero%20una%20prueba%20de%20manejo" class="btn" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-car"></i>
+                    Prueba de manejo
                 </a>
-                <a href="https://wa.me/527773676346?text=Hola,%20me%20gustaría%20saber%20su%20catálogo%20de%20vehículos%20disponibles%20en%20este%20momento" class="btn whatsapp" data-aos="zoom-in" data-aos-delay="400">
+                <a href="https://wa.me/527773676346?text=Hola,%20me%20gustaría%20saber%20su%20catálogo%20de%20vehículos%20disponibles%20en%20este%20momento" class="btn" data-aos="zoom-in" data-aos-delay="400">
                     <i class="fab fa-whatsapp"></i>
                     WhatsApp
                 </a>
@@ -761,7 +800,7 @@
                 </a>
                 <button class="btn" onclick="downloadVCard()" data-aos="zoom-in" data-aos-delay="600">
                     <i class="fas fa-download"></i>
-                    Descargar vCard
+                    Agregar a contactos
                 </button>
                 <a href="http://www.vw-crestacuernavaca.com.mx/" class="btn" data-aos="zoom-in" data-aos-delay="700" target="_blank" rel="noopener">
                     <i class="fas fa-globe"></i>
@@ -792,10 +831,10 @@
             <span class="social-label">Síguenos</span>
         </button>
         <div class="social-menu" id="socialMenu">
-            <a href="#" class="social-link" aria-label="Facebook" style="--delay: 0.1s">
+            <a href="https://www.facebook.com/seminuevoscuernavacamultimarcas" class="social-link" aria-label="Facebook" style="--delay: 0.1s" target="_blank" rel="noopener">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="#" class="social-link" aria-label="Instagram" style="--delay: 0.2s">
+            <a href="https://www.instagram.com/vw_cresta_cuernavaca/" class="social-link" aria-label="Instagram" style="--delay: 0.2s" target="_blank" rel="noopener">
                 <i class="fab fa-instagram"></i>
             </a>
             <a href="#" class="social-link" aria-label="LinkedIn" style="--delay: 0.3s">
@@ -898,7 +937,7 @@ ORG:Cresta Volkswagen Cuernavaca
 TEL;TYPE=CELL:+527773676346
 TEL;TYPE=WORK:+527771010530
 EMAIL:erick.crestavw@gmail.com
-URL:http://www.vw-crestacuernavaca.com.mx/
+URL:https://5410m0n0c001.github.io/Erick-Salgado-Castrejon-cresta-volks-wagen-cuernavaca/
 ADR:;;Cuernavaca;Morelos;Mexico
 END:VCARD`;
 
